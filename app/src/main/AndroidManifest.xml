@@ -19,6 +19,8 @@
         <activity android:name=".ui.TransitionActivity" />
         <activity android:name=".ui.AnimationListActivity" />
         <activity android:name=".ui.VectorAnimationActivity" />
+        <activity android:name=".ui.ShareElementTransitionActivity" />
+        <activity android:name=".ui.ImageActivity" />
     </application>
 
 </manifest>

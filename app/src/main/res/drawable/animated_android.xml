@@ -5,10 +5,10 @@
     android:drawable="@drawable/android">
 
     <target
-        android:animation="@animator/shrug"
+        android:animation="@anim/shrug"
         android:name="head_eyes" />
 
     <target
-        android:animation="@animator/shrug"
+        android:animation="@anim/shrug"
         android:name="arms" />
 </animated-vector>

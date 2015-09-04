@@ -48,19 +48,14 @@ public class TransitionActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //Toast.makeText(TransitionActivity.this, " Click " + position, Toast.LENGTH_LONG).show();
                 switch (position) {
+
                     case 0:
-                        getWindow().setExitTransition(new AutoTransition());
-                        break;
-                    case 1:
-                        getWindow().setExitTransition(new ChangeBounds());
-                        break;
-                    case 2:
                         getWindow().setExitTransition(new Explode());
                         break;
-                    case 3:
+                    case 1:
                         getWindow().setExitTransition(new Fade());
                         break;
-                    case 4:
+                    case 2:
                         getWindow().setExitTransition(new Slide());
                         break;
                 }
@@ -71,15 +66,13 @@ public class TransitionActivity extends AppCompatActivity {
     }
 
     private void initList() {
-        mItems.add(new TransitionAdapter.TransitionItem(getString(R.string.transition_auto)));
-        mItems.add(new TransitionAdapter.TransitionItem(getString(R.string.transition_change_bounds)));
         mItems.add(new TransitionAdapter.TransitionItem(getString(R.string.transition_explode)));
         mItems.add(new TransitionAdapter.TransitionItem(getString(R.string.transition_fade)));
         mItems.add(new TransitionAdapter.TransitionItem(getString(R.string.transition_slide)));
     }
 
     public void startActivityAnimation() {
-        Intent intent = new Intent(this, AnimationListActivity.class);
+        Intent intent = new Intent(this, ImageActivity.class);
         startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }
 

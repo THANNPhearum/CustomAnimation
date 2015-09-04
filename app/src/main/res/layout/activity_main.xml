@@ -31,4 +31,12 @@
         android:layout_centerVertical="true"
         android:layout_gravity="center_horizontal"
         android:text="@string/activity_transition" />
+    <Button
+        android:id="@+id/btn_share_element_transition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/share_element_transition" />
 </LinearLayout>
