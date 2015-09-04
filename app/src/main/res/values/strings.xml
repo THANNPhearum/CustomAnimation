@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CustomAnimation</string>
+    <string name="activity_transition">Activity Transition</string>
+    <string name="vector_animation">Vector Animation</string>
+    <string name="animation_list">Animation List</string>
+    <!-- Transition -->
+    <string name="transition.change_bounds">ChangeBounds</string>
+    <string name="transition.fade">Fade</string>
+    <string name="transition.explode">Explode</string>
+    <string name="transition.slide">Slide</string>
+    <string name="transition.auto">Auto</string>
+
+</resources>
